@@ -1,0 +1,634 @@
+/* global components _____________________*/
+@font-face {
+    font-family: paragraph1;
+    src: url(../fonts/ApfelGrotezk-Regular.otf);
+}
+
+@font-face {
+    font-family: paragraph2;
+    src: url(../fonts/Messapia-Bold.otf);
+}
+
+@font-face {
+    font-family: paragraph3;
+    src: url(../fonts/Ribes-Black.otf);
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html::-webkit-scrollbar {
+    width: 0 !important;
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}
+
+
+body {
+    color: white;
+    background: #000;
+    opacity: 0;
+    transition: 1s all ease;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    overflow: hidden;
+
+}
+
+img {
+    pointer-events: none;
+}
+
+.centerMe {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.space {
+    margin: 60px 0;
+
+}
+
+
+/* nav ___________________________________*/
+
+nav {
+    width: 70px;
+    height: 70px;
+    background:blue;
+    position: fixed;
+    border-radius: 800px;
+    display: flex;
+    visibility: hidden;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+    bottom: 40px;
+    right: 40px;
+}
+
+nav img {
+    width: 40px;
+    background: rgba(0, 0, 0, 0);
+}
+
+/* footer ________________________________*/
+
+
+/* all the css  */
+.box1 {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    text-align: center;
+}
+
+#begin {
+    flex-direction: column;
+}
+
+.box1 h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: lighter;
+    color: white;
+    font-size: 2.5em;
+
+}
+
+.button {
+    border: #FF5400 2px solid;
+    border-radius: 20000px;
+    width: 100px;
+    font-size: 1.1em;
+    font-family: paragraph1;
+    font-weight: bolder;
+    height: 100px;
+    text-align: center;
+    color: white;
+    cursor: grab;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border 0.2s ease-out;
+}
+
+.buttonPlay {
+    border: #FF5400 2px solid;
+    border-radius: 20000px;
+    width: 100px;
+    font-size: 1.1em;
+    font-family: paragraph1;
+    font-weight: bolder;
+    height: 100px;
+    text-align: center;
+    color: white;
+    cursor: grab;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: border 0.2s ease-out;
+}
+
+.buttonPlay:hover {
+    border: blue 2px solid;
+}
+
+.button:hover {
+    border: blue 2px solid;
+}
+
+
+/* box2 */
+
+.box2 {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    z-index: 170;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#matrix {
+    width: 680px;
+    height: 400px;
+    box-sizing: border-box;
+    overflow: hidden;
+    text-align: left;
+    color: rgb(15, 103, 15);
+}
+
+#matrixFx {
+    font-size: 1.3em;
+}
+
+/* box3 */
+
+.box3 {
+    width: 100%;
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 165;
+
+}
+
+.box3 h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2.8em;
+    color: white;
+    font-weight: lighter;
+}
+
+.orange {
+    position: relative;
+}
+
+.orange::before {
+    content: "";
+    width: 7px;
+    background: url(../img/orange.svg);
+    height: 40px;
+    margin-right: 20px;
+    left: -20px;
+    top: 8px;
+    display: block;
+    position: absolute;
+}
+
+.box3 p {
+    margin-top: 30px;
+    font-size: 1.4em;
+    font-family: paragraph1;
+}
+
+.opac {
+    opacity: 0.2;
+}
+
+.containStuff {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.graph {
+    width: 40%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    z-index: 19;
+    margin-right: 140px;
+}
+
+.graph2 {
+    width: 40%;
+    height: 700px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    z-index: 19;
+    margin-right: 140px;
+}
+
+#head {
+    width: 300px;
+    height: auto;
+    z-index: 30;
+
+    background-color: rgba(255, 166, 0, 0);
+
+}
+
+#heart1 {
+    width: 90px;
+    position: absolute;
+    height: auto;
+    transform: rotateY(555deg);
+    background-color: rgba(255, 166, 0, 0);
+}
+
+#heart2 {
+    width: 110px;
+    position: absolute;
+    height: auto;
+    z-index: 20;
+    background-color: rgba(255, 166, 0, 0);
+
+}
+
+.explain {
+    width: 55%;
+    flex-direction: column;
+    height: 700px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    margin: 140px;
+
+}
+
+
+
+
+/* spotify */
+
+#spoti {
+    width: 160px;
+    height: auto;
+    margin: 55px;
+    transform: scale(1);
+    box-shadow: 10px 10px 40px 10px #ff550076;
+}
+
+.containStuff h3 {
+    color: #FF5400;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.3em;
+
+}
+
+.construct {
+    width: 400px;
+    height: auto;
+}
+
+.building {
+    width: 400px;
+    height: 100vh;
+}
+
+.philosophy {
+    width: 400px;
+    height: 100vh;
+    margin: 30px;
+}
+
+#tower {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#sky {
+    position: absolute;
+}
+
+
+/* Project */
+
+.projectContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #000;
+    width: 100%;
+}
+
+.projectSlides {
+    width: 100%;
+    height: 350px;
+    margin: 23px 0;
+    position: relative;
+}
+
+.slideProjectEffect {
+    position: absolute;
+    height: 100%;
+    background: linear-gradient(282deg, rgba(255, 59, 0, 1) 0%, rgba(0, 0, 255, 1) 90%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: crosshair;
+    justify-content: flex-start;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) all 1.5s;
+    left: -100vw;
+}
+
+.slideProjectEffect img {
+    max-height: 300px;
+    margin: 0 20px;
+}
+
+.slideProjectEffect h3 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 3em;
+    width: 400px;
+    margin: 0 25px 0 80px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.slideProjectEffectTransform {
+    transform: translateX(100vw);
+}
+
+
+
+.showcaseScrollMagic {
+    width: 100vw !important;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    background: blue;
+}
+
+.middleing {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.magicTextContainer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -163px;
+    margin-left: -324px;
+    width: 648px;
+    height: 327px;
+}
+
+.designText {
+    text-transform: capitalize;
+    font-family: paragraph2;
+    position: absolute;
+    top: 25px;
+    transition: all ease-in 0.1s;
+    opacity: 0;
+    font-size: 8.5em;
+    background: rgba(0, 0, 0, 0);
+}
+
+.opacify {
+    opacity: 1 !important;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    background: black;
+    position: absolute;
+    transform: scale(0);
+    left: 50%;
+    top: 50%;
+    border-radius: 100px;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+.circleSquare {
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    filter: saturate();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive part _______________________*/
+
+
+@media screen and (max-width: 1000px) {}
+
+
+@media screen and (max-width: 800px) {}
+
+
+@media screen and (max-width: 450px) {
+    .containStuff {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column-reverse;
+        font-size: 0.8em;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: black;
+    }
+
+    .graph {
+        height: auto;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .graph img {
+        width: 245px;
+    }
+
+    .explain {
+        width: 88%;
+        flex-direction: column;
+        height: 700px;
+        text-align: left;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 34px;
+    }
+
+    .graph2 {
+        width: 92%;
+        height: 428px;
+        position: relative;
+        margin-top: -80px;
+        display: flex;
+        align-items: center;
+        padding-bottom: 15px;
+        justify-content: center;
+        flex-direction: column;
+        text-align: left;
+        z-index: 19;
+        margin-right: 0;
+    }
+
+    .space {
+        margin: 33px 0;
+    }
+
+    .philosophy {
+        width: 80vw;
+        height: 606px;
+        text-align: center;
+        margin: 20px;
+    }
+
+    .construct {
+        width: 300px;
+        height: auto;
+    }
+
+    .building {
+        width: 300px;
+        height: 500px;
+
+    }
+
+    .slideProjectEffect {
+        left: 0;
+        font-size: 0.8em;
+        flex-direction: column;
+        border-radius: 10px;
+        justify-content: center;
+        position: initial;
+        width: 90%;
+    }
+
+    .slideProjectEffect h3 {
+        margin: 22px;
+        text-align: center;
+        width: 300px;
+    }
+
+    .slideProjectEffect img {
+        max-height: 110px;
+        margin: 0 5px;
+    }
+
+    .designText {
+        font-size: 3.5em;
+    }
+
+    .magicTextContainer {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        margin-top: -123px;
+        margin-left: -150px;
+        width: 300px;
+        height: 317px;
+        text-align: center;
+    }
+
+    .showcaseScrollMagic {
+        margin: auto;
+        top: 0px;
+        pointer-events: none;
+        left: 0;
+        bottom: auto;
+        right: auto;
+        visibility: visible;
+        opacity: 0;
+    }
+    .projectSlides {
+        width: 100%;
+        height: 350px;
+        justify-content: center;
+        display: flex;
+        margin: 23px 0;
+        position: relative;
+    }
+    .box3 p {
+        margin-top: 30px;
+        font-size: 1.5em;
+        font-family: paragraph1;
+    }
+    #matrix {
+        width: 300px;
+        height: 400px;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: left;
+        font-size: 0.8em;
+        color: rgb(15, 103, 15);
+    }
+    #matrixFx {
+        font-size: 1.4em;
+    }
+
+}
+
+
+@media screen and (max-width: 300px) {}
