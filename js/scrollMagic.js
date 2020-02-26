@@ -48,7 +48,7 @@ function UpdatePercentage() {
 
 
 tl.to(circle, 1, {
-    scale: 40,
+    scale: 50,
     ease: Power2.easeOut
 })
 
