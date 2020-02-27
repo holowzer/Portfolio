@@ -1,5 +1,15 @@
 const body=document.querySelector('body')
 const projectSlides=document.querySelectorAll('.projectSlides')
+const blueboy=document.querySelector(".blueboy")
+const startAnimation=document.querySelector("nav")
+
+startAnimation.addEventListener('click',()=>{
+    blueboy.classList.toggle("backforth")
+    console.log("okay")
+})
+
+
+
 
 for(let i=0;i<projectSlides.length;i++){
 projectSlides[i].addEventListener('mouseover',()=>{

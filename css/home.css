@@ -1,4 +1,4 @@
-a{
+a {
     text-decoration: none;
     color: white;
 }
@@ -69,14 +69,14 @@ img {
 nav {
     width: 70px;
     height: 70px;
-    background:blue;
+    background: blue;
     position: fixed;
     border-radius: 800px;
     display: flex;
     visibility: hidden;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 1003;
     cursor: pointer;
     bottom: 40px;
     right: 40px;
@@ -84,6 +84,8 @@ nav {
 
 nav img {
     width: 40px;
+    position: absolute;
+    z-index: 10001;
     background: rgba(0, 0, 0, 0);
 }
 
@@ -300,6 +302,7 @@ nav img {
     flex-direction: column;
     height: 700px;
     text-align: left;
+    font-size: 1.2em;
     display: flex;
     justify-content: center;
     margin: 140px;
@@ -307,7 +310,7 @@ nav img {
 }
 
 
-.explain a{
+.explain a {
     text-decoration: none;
 }
 
@@ -339,9 +342,10 @@ nav img {
 }
 
 .philosophy {
-    width: 400px;
+    width: 630px;
     height: 100vh;
     margin: 30px;
+    font-size: 1.2em;
 }
 
 #tower {
@@ -469,8 +473,95 @@ nav img {
 
 
 
+.blueboy {
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform:translateX(100vw)  translateY(100vh) scale(0.1) ;
+    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1000px;
+}
+.backforth{
+    opacity: 1;
+transform: scale(1) translateX(0vw) translateY(00vh);
 
+border-radius: 0px;
+}
 
+.contactCta a img {
+    width: 100px;
+    height: auto;
+    transform: rotate(0deg);
+    margin: 20px;
+}
+
+#turnover {
+    position: relative;
+    top: 7px;
+    display: block;
+    height: auto;
+    z-index: 10000001;
+}
+
+#turnover img {
+    transform: rotate(0deg);
+    transition: all ease-out 0.3s;
+
+}
+
+#turnover:hover img {
+    transform: rotate(450deg);
+}
+
+.contactCta span {
+    font-family: paragraph1;
+    font-size: 60px;
+    color: rgb(245, 245, 245);
+    transition: all 0.3s ease-out;
+    position: relative;
+    z-index: 1002;
+
+}
+
+.contactCta span:hover {
+    color: rgb(83, 83, 83);
+    cursor: grab;
+
+}
+
+.contactCta {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+#yellow {
+    color: yellow;
+}
+
+#dark {
+    color: black;
+}
+
+#red {
+    color: red;
+}
+
+.convincingText {
+    font-family: paragraph1;
+    font-size: 80px;
+    width: 900px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
 
 
 
@@ -502,6 +593,26 @@ nav img {
         position: relative;
         background-color: black;
     }
+    .convincingText {
+        font-family: paragraph1;
+        font-size: 50px;
+        width: 250px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-left: -10px;
+    }
+    .contactCta {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactCta a img {
+        width: 70px;
+        height: auto;
+        transform: rotate(0deg);
+        margin: 20px;
+    }
 
     .graph {
         height: auto;
@@ -526,10 +637,10 @@ nav img {
     }
 
     .graph2 {
-        width: 92%;
-        height: 428px;
+        width: 100%;
+        height: auto;
         position: relative;
-        margin-top: -80px;
+        margin-top: 0px;
         display: flex;
         align-items: center;
         padding-bottom: 15px;
@@ -546,7 +657,7 @@ nav img {
 
     .philosophy {
         width: 80vw;
-        height: 606px;
+        height: auto;
         text-align: center;
         margin: 20px;
     }
@@ -580,7 +691,7 @@ nav img {
 
     .slideProjectEffect img {
         max-height: 110px;
-        margin: 0 5px ;
+        margin: 0 5px;
     }
 
     .designText {
@@ -609,6 +720,7 @@ nav img {
         visibility: visible;
         opacity: 0;
     }
+
     .projectSlides {
         width: 100%;
         height: 350px;
@@ -617,11 +729,13 @@ nav img {
         margin: 23px 0;
         position: relative;
     }
+
     .box3 p {
         margin-top: 30px;
         font-size: 1.5em;
         font-family: paragraph1;
     }
+
     #matrix {
         width: 300px;
         height: 400px;
@@ -631,6 +745,7 @@ nav img {
         font-size: 0.8em;
         color: rgb(15, 103, 15);
     }
+
     #matrixFx {
         font-size: 1.4em;
     }
