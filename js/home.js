@@ -1,3 +1,4 @@
+
 const body=document.querySelector('body')
 const projectSlides=document.querySelectorAll('.projectSlides')
 const blueboy=document.querySelector(".blueboy")

@@ -1,7 +1,7 @@
 const magicWindow = document.querySelector(".showcaseScrollMagic")
 const circle = document.querySelector('.circle')
-
 const nameDesignContainer = document.querySelector(".magicTextContainer")
+
 let txtSpace = 5
 const colors = ["white", "blue", "#FF5400"]
 let i = 0
@@ -90,16 +90,32 @@ nameScene.on("update", (e) => {
         }
     }
 
-
-
 })
 
 
+const designShow=document.querySelector('.showcaseLand')
+const textBlurry1=document.querySelector('.tltext1')
+const textBlurry2=document.querySelector('.tltext2')
+
+let scrolling = window.scrollY
+
+window.addEventListener('scroll',event=>{
+    if(window.scrollY>3650){
+        textBlurry1.classList.add('textFinalPhase')
+    }
+    if(window.scrollY>4750){
+        textBlurry2.classList.add('textFinalPhase')
+    }
+    console.log('one',window.scrollY)
 
 
+})
+window.addEventListener('scroll',event=>{
+    if( window.scrollY>6000 || window.scrollY<2000) {
+        textBlurry2.classList.remove('textFinalPhase')
+        textBlurry1.classList.remove('textFinalPhase')
+    
+    }
+    console.log('two',window.scrollY)
+})
 
-setInterval(() => {
-
-
-
-}, 100);

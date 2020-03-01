@@ -67,8 +67,8 @@ img {
 /* nav ___________________________________*/
 
 nav {
-    width: 70px;
-    height: 70px;
+    width: 110px;
+    height: 110px;
     background: blue;
     position: fixed;
     border-radius: 800px;
@@ -254,7 +254,7 @@ nav img {
     justify-content: center;
     text-align: left;
     z-index: 19;
-    margin-right: 140px;
+    margin-right: 0px;
 }
 
 .graph2 {
@@ -268,7 +268,7 @@ nav img {
     flex-direction: column;
     text-align: left;
     z-index: 19;
-    margin-right: 140px;
+    margin-right: 0px;
 }
 
 #head {
@@ -305,7 +305,8 @@ nav img {
     font-size: 1.2em;
     display: flex;
     justify-content: center;
-    margin: 140px;
+    align-items: flex-start;
+    margin:0px;
 
 }
 
@@ -566,8 +567,58 @@ border-radius: 0px;
 
 
 
+.showcaseLand{
+    height: 100vh;
+    background: #000;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.showcaseLand img{
+    width: auto;
+    height: 500px;
+    margin-right: 80px;
+    margin-bottom: 75px;
+}
+.board1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:0 140px;  
+}
+.board2{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding:0 140px;
+}
+.contextFrame{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    font-family: paragraph1;
+    font-size: 35px;
+}
+.descriptionBoard{
+    width: 40%;
+    opacity: 0;
+    filter: brightness(0) sepia(1);
+    transform: translateX(-200px) skewX(40deg) rotate(-10deg) ;
+    transition: all 1.2s cubic-bezier(0.77, 0, 0.175, 1);
+    
+}
+.textFinalPhase{
+    opacity: 1;
+    filter: brightness(1) sepia(0%);
+    transform:  translateX(0) skewX(0deg) rotate(0deg);
+}
 
-
+.shadowingBoard{
+    display: none;
+}
 
 
 
@@ -754,3 +805,5 @@ border-radius: 0px;
 
 
 @media screen and (max-width: 300px) {}
+
+
