@@ -96,8 +96,14 @@ nameScene.on("update", (e) => {
 const designShow=document.querySelector('.showcaseLand')
 const textBlurry1=document.querySelector('.tltext1')
 const textBlurry2=document.querySelector('.tltext2')
-
+const poster1=document.querySelector('#poster1')
+const poster2=document.querySelector('#poster2')
+const poster3=document.querySelector('#poster3')
+const poster4=document.querySelector('#poster4')
+const poster5=document.querySelector('#poster5')
 let scrolling = window.scrollY
+let turnx=0
+let turny=0
 
 window.addEventListener('scroll',event=>{
     if(window.scrollY>3650){
@@ -106,7 +112,6 @@ window.addEventListener('scroll',event=>{
     if(window.scrollY>4750){
         textBlurry2.classList.add('textFinalPhase')
     }
-    console.log('one',window.scrollY)
 
 
 })
@@ -116,6 +121,23 @@ window.addEventListener('scroll',event=>{
         textBlurry1.classList.remove('textFinalPhase')
     
     }
-    console.log('two',window.scrollY)
+})
+
+window.addEventListener('scroll',event=>{
+    if( window.scrollY>2900 && window.scrollY<5600) {
+        turnx+=window.scrollY/window.scrollY-0.77
+        turny+=window.scrollY/window.scrollY-0.8
+        poster1.style.transform="rotateX("+turnx*-1+"deg) rotateY("+turny*1+"deg)"
+        poster2.style.transform="rotateX("+turnx+"deg) rotateY("+turny*1.02+"deg)"
+        poster3.style.transform="rotateX("+turnx*-1.05+"deg) rotateY("+turny*1.89+"deg)"
+        poster4.style.transform="rotateX("+turnx*-0.87+"deg) rotateY("+turny*1.23+"deg)"
+        poster5.style.transform="rotateX("+turnx*0.67+"deg) rotateY("+turny*0.13+"deg)"
+    }
+    else{
+        turnx=0
+        turny=0
+        poster1.style.transform="rotateX("+turnx+"deg) rotateY("+turny+"deg)"
+
+    }
 })
 
