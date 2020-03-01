@@ -125,11 +125,11 @@ window.addEventListener('scroll',event=>{
 
 window.addEventListener('scroll',event=>{
     if( window.scrollY>2900 && window.scrollY<5600) {
-        turnx+=window.scrollY/window.scrollY-0.77
-        turny+=window.scrollY/window.scrollY-0.8
+        turnx+=window.scrollY/window.scrollY-0.87
+        turny+=window.scrollY/window.scrollY-0.85
         poster1.style.transform="rotateX("+turnx*-1+"deg) rotateY("+turny*1+"deg)"
-        poster2.style.transform="rotateX("+turnx+"deg) rotateY("+turny*1.02+"deg)"
-        poster3.style.transform="rotateX("+turnx*-1.05+"deg) rotateY("+turny*1.89+"deg)"
+        poster2.style.transform="rotateX("+turnx+"deg) rotateY("+turny*0.82+"deg)"
+        poster3.style.transform="rotateX("+turnx*-1.35+"deg) rotateY("+turny*1.89+"deg)"
         poster4.style.transform="rotateX("+turnx*-0.87+"deg) rotateY("+turny*1.23+"deg)"
         poster5.style.transform="rotateX("+turnx*0.67+"deg) rotateY("+turny*0.13+"deg)"
     }

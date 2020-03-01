@@ -262,7 +262,7 @@ nav img {
     height: 700px;
     position: relative;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     padding-bottom: 15px;
     justify-content: center;
     flex-direction: column;
@@ -385,13 +385,14 @@ nav img {
     align-items: center;
     cursor: crosshair;
     justify-content: flex-start;
-    transition: cubic-bezier(0.19, 1, 0.22, 1) all 1.5s;
-    left: -100vw;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) all 1s;
+    filter: contrast(70%) blur(5px) brightness(20%) ;
 }
 
 .slideProjectEffect img {
     max-height: 300px;
     margin: 0 20px;
+    box-shadow: 10px 10px 40px black;
 }
 
 .slideProjectEffect h3 {
@@ -403,7 +404,7 @@ nav img {
 }
 
 .slideProjectEffectTransform {
-    transform: translateX(100vw);
+    filter: contrast(100%) blur(0px) brightness(100%) ;
 }
 
 
@@ -484,7 +485,7 @@ nav img {
     justify-content: center;
     opacity: 0;
     transform:translateX(100vw)  translateY(100vh) scale(0.1) ;
-    transition: all 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
     flex-direction: column;
     align-items: center;
     border-radius: 1000px;
