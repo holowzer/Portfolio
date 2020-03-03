@@ -125,9 +125,9 @@ window.addEventListener('scroll',event=>{
 
 window.addEventListener('scroll',event=>{
     if( window.scrollY>2900 && window.scrollY<5600) {
-        turnx+=window.scrollY/window.scrollY-0.87
-        turny+=window.scrollY/window.scrollY-0.85
-        poster1.style.transform="rotateX("+turnx*-1+"deg) rotateY("+turny*1+"deg)"
+        turnx+=window.scrollY/window.scrollY-0.84
+        turny+=window.scrollY/window.scrollY-0.82
+        poster1.style.transform="rotateX("+turnx*1+"deg) rotateY("+turny*1+"deg)"
         poster2.style.transform="rotateX("+turnx+"deg) rotateY("+turny*0.82+"deg)"
         poster3.style.transform="rotateX("+turnx*-1.35+"deg) rotateY("+turny*1.89+"deg)"
         poster4.style.transform="rotateX("+turnx*-0.87+"deg) rotateY("+turny*1.23+"deg)"
@@ -140,4 +140,19 @@ window.addEventListener('scroll',event=>{
 
     }
 })
+
+const poster=document.querySelectorAll('.posterArthur')
+const imgframe=document.querySelectorAll('.imgframe')
+
+for(i=0;i<imgframe.length;i++){
+    imgframe[i].addEventListener("click",()=>{
+        console.log("poster[i]")
+        turnx=0
+        turny=0
+        for (const element of poster) {
+            element.style.transform="rotateX(0deg) rotateY(0deg)"
+        }
+    })
+}
+
 

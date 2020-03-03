@@ -277,3 +277,17 @@ shade.play();
 
 var rellax = new Rellax('.rellax');
 
+// the cursor animation part 
+
+let cursor=document.createElement('div')
+body.appendChild(cursor)
+cursor.classList.add('cursor')
+
+document.addEventListener('mousemove', (e)=>{
+    console.log(e.screenX)
+    console.log(e.clientX)
+cursor.style.left=e.clientX+"px"
+cursor.style.top=e.clientY+"px"
+}
+)
+

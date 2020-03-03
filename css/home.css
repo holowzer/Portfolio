@@ -35,6 +35,8 @@ html::-webkit-scrollbar {
 
 body {
     color: white;
+    outline: none;
+    cursor: pointer;
     background: #000;
     opacity: 0;
     transition: 1s all ease;
@@ -77,7 +79,6 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 1003;
-    cursor: pointer;
     bottom: 40px;
     right: 40px;
 }
@@ -126,7 +127,6 @@ nav img {
     height: 100px;
     text-align: center;
     color: white;
-    cursor: grab;
     margin: 20px auto;
     display: flex;
     align-items: center;
@@ -144,7 +144,6 @@ nav img {
     height: 100px;
     text-align: center;
     color: white;
-    cursor: grab;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,7 +382,6 @@ nav img {
     width: 100%;
     display: flex;
     align-items: center;
-    cursor: crosshair;
     justify-content: flex-start;
     transition: cubic-bezier(0.19, 1, 0.22, 1) all 1s;
     filter: contrast(70%) blur(5px) brightness(20%) ;
@@ -534,7 +532,6 @@ border-radius: 0px;
 
 .contactCta span:hover {
     color: rgb(83, 83, 83);
-    cursor: grab;
 
 }
 
@@ -580,6 +577,7 @@ border-radius: 0px;
     width: auto;
     height: 500px;
     margin-right: 80px;
+    transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
     margin-bottom: 75px;
 }
 .board1{
@@ -624,6 +622,7 @@ border-radius: 0px;
 .imgFrame{
     perspective: 600px;
     transform-style: preserve-3d;
+    pointer-events: none !important;
 }
 #scroll3dLeft{
     transform: rotateX(0deg);
@@ -648,6 +647,67 @@ border-radius: 0px;
         justify-content: center;
         position: relative;
         background-color: black;
+    }
+
+    nav {
+        width: 80px;
+        height: 80px;
+        background: blue;
+        position: fixed;
+        border-radius: 800px;
+        display: flex;
+        visibility: hidden;
+        justify-content: center;
+        align-items: center;
+        z-index: 1003;
+        bottom: 20px;
+        right: 20px;
+    }
+    .contextFrame {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        font-family: paragraph1;
+        font-size: 26px;
+    }
+    #poster2, #poster3, #poster5{
+        display: none;
+    }
+    .imgFrame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .showcaseLand img{
+        width: 280px ;
+        height: auto;
+        margin: 0;
+    }
+    .descriptionBoard {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 90px;
+    }
+    .slideProjectEffect {
+        position: absolute;
+        height: 100%;
+        background: linear-gradient(282deg, rgba(255, 59, 0, 1) 0%, rgba(0, 0, 255, 1) 90%);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        transition: cubic-bezier(0.19, 1, 0.22, 1) all 1s;
+        filter: contrast(100%) blur(0px) brightness(100%);
+    }
+    .showcaseLand {
+        height: auto;
+    }
+    .board2, .board1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 30px;
     }
     .convincingText {
         font-family: paragraph1;
@@ -683,15 +743,20 @@ border-radius: 0px;
     .explain {
         width: 88%;
         flex-direction: column;
-        height: 700px;
+        height: auto;
         text-align: left;
         display: flex;
-        text-align: center;
+        text-align: left;
         align-items: center;
         justify-content: center;
         margin: 34px;
     }
-
+    .box3 h2 {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 2.4em;
+        color: white;
+        font-weight: lighter;
+    }   
     .graph2 {
         width: 100%;
         height: auto;
@@ -712,9 +777,9 @@ border-radius: 0px;
     }
 
     .philosophy {
-        width: 80vw;
+        width: 89%;
         height: auto;
-        text-align: center;
+        text-align: left;
         margin: 20px;
     }
 
@@ -724,7 +789,10 @@ border-radius: 0px;
     }
 
     .building {
-        width: 300px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         height: 500px;
 
     }
@@ -788,7 +856,7 @@ border-radius: 0px;
 
     .box3 p {
         margin-top: 30px;
-        font-size: 1.5em;
+        font-size: 26px;
         font-family: paragraph1;
     }
 
@@ -812,3 +880,15 @@ border-radius: 0px;
 @media screen and (max-width: 300px) {}
 
 
+/* cursor boy */
+
+.cursor{
+    position: absolute;
+    z-index: 10000000000000000;
+    left: 50%;
+    top: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    background: rgb(255, 255, 255);
+}
