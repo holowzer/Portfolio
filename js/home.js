@@ -284,10 +284,36 @@ body.appendChild(cursor)
 cursor.classList.add('cursor')
 
 document.addEventListener('mousemove', (e)=>{
-    console.log(e.screenX)
-    console.log(e.clientX)
 cursor.style.left=e.clientX+"px"
 cursor.style.top=e.clientY+"px"
 }
 )
+
+function circularText(txt, radius, classIndex) {
+    txt = txt.split(""),
+      classIndex = document.getElementsByClassName("circTxt")[classIndex];
+  
+    var deg = 360 / txt.length,
+      origin = 0;
+  
+    txt.forEach((ea) => {
+      ea = `<p style='height:${radius}px;position:absolute;transform:rotate(${origin}deg);transform-origin:0 100%'>${ea}</p>`;
+      classIndex.innerHTML += ea;
+      origin += deg;
+    });
+  }
+
+ 
+  circularText("Une vie nous sépare - The Documentary - ", 300, 0);
+
+  const ctadocu=document.querySelector('.ctaDocumentary')
+  ctadocu.addEventListener('mouseover',()=>{
+      document.querySelector('.lineSee').style.transform="scaleX(1.3)"
+  })
+  ctadocu.addEventListener('mouseout',()=>{
+      document.querySelector('.lineSee').style.transform="scaleX(0)"
+  })
+
+
+
 

@@ -145,8 +145,7 @@ const poster=document.querySelectorAll('.posterArthur')
 const imgframe=document.querySelectorAll('.imgframe')
 
 for(i=0;i<imgframe.length;i++){
-    imgframe[i].addEventListener("click",()=>{
-        console.log("poster[i]")
+    window.addEventListener("click",()=>{
         turnx=0
         turny=0
         for (const element of poster) {
