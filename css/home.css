@@ -36,7 +36,6 @@ html::-webkit-scrollbar {
 body {
     color: white;
     outline: none;
-    cursor: pointer;
     background: #000;
     opacity: 0;
     transition: 1s all ease;
@@ -233,13 +232,13 @@ nav img {
 
 .opac {
     opacity: 0.2;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .containStuff {
     width: 100%;
     height: 100vh;
-    margin: 30px 0;
+    margin: 100px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -594,27 +593,46 @@ border-radius: 0px;
 .board1{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding:0 160px;  
 }
 .board2{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     padding:0 160px;
 }
 .contextFrame{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-family: paragraph1;
-    font-size: 35px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 100px;
+    line-height: 1.4em;
+}
+.exhibitions{
+    display: inline-block;  
+    width: 160px;
+    margin-bottom: -10px;
+    height: 100px;
+    overflow: hidden;
+
+}
+.VerticalBoi{
+    height: 160px;
+    width: 120px;
+    margin-left: 20px;
+}
+.exhibitions img{
+    width: 150px;
+    height: auto;
 }
 .descriptionBoard{
-    width: 40%;
+    width: 100%;
     opacity: 0;
+    text-align: left;
     filter: brightness(0) sepia(1);
     transform: translateX(-80px) skewX(30deg) rotate(-5deg) ;
     transition: all 1s cubic-bezier(0.47, 0, 0.175, 1);
@@ -622,6 +640,7 @@ border-radius: 0px;
 }
 .textFinalPhase{
     opacity: 1;
+    margin: 0 auto;
     filter: brightness(1) sepia(0%);
     transform:  translateX(0) skewX(0deg) rotate(0deg);
 }
@@ -971,6 +990,7 @@ div.imgframe{
     position: absolute;
     z-index: 10000000000000000;
     left: 50%;
+    display: none;
     top: 50%;
     width: 12px;
     height: 12px;

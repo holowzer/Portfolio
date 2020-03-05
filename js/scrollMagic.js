@@ -116,7 +116,7 @@ window.addEventListener('scroll',event=>{
 
 })
 window.addEventListener('scroll',event=>{
-    if( window.scrollY>6000 || window.scrollY<2000) {
+    if( window.scrollY>8500 || window.scrollY<2000) {
         textBlurry2.classList.remove('textFinalPhase')
         textBlurry1.classList.remove('textFinalPhase')
     
