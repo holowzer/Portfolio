@@ -106,10 +106,10 @@ let turnx=0
 let turny=0
 
 window.addEventListener('scroll',event=>{
-    if(window.scrollY>3650){
+    if(window.scrollY>3750){
         textBlurry1.classList.add('textFinalPhase')
     }
-    if(window.scrollY>4750){
+    if(window.scrollY>5450){
         textBlurry2.classList.add('textFinalPhase')
     }
 
@@ -117,14 +117,17 @@ window.addEventListener('scroll',event=>{
 })
 window.addEventListener('scroll',event=>{
     if( window.scrollY>8500 || window.scrollY<2000) {
-        textBlurry2.classList.remove('textFinalPhase')
         textBlurry1.classList.remove('textFinalPhase')
+        textBlurry2.classList.remove('textFinalPhase')
+
     
     }
 })
 
+
+
 window.addEventListener('scroll',event=>{
-    if( window.scrollY>2900 && window.scrollY<5600) {
+    if( window.scrollY>2900 && window.scrollY<8000) {
         turnx+=window.scrollY/window.scrollY-0.84
         turny+=window.scrollY/window.scrollY-0.82
         poster1.style.transform="rotateX("+turnx*1+"deg) rotateY("+turny*1+"deg)"

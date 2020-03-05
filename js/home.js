@@ -277,7 +277,7 @@ shade.play();
 
 var rellax = new Rellax('.rellax');
 
-// the cursor animation part 
+// the cursor animation part WIP WIP WIP WIP WIP WIP !!!!!!!!!
 
 let cursor=document.createElement('div')
 body.appendChild(cursor)
