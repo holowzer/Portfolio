@@ -45,7 +45,6 @@ body {
     -o-user-select: none;
     user-select: none;
     overflow: hidden;
-
 }
 
 img {
@@ -56,12 +55,10 @@ img {
     align-items: center;
     justify-content: center;
     display: flex;
-
 }
 
 .space {
     margin: 60px 0;
-
 }
 
 
@@ -113,7 +110,6 @@ nav img {
     font-weight: lighter;
     color: white;
     font-size: 2.5em;
-
 }
 
 .button {
@@ -197,7 +193,6 @@ nav img {
     position: absolute;
     top: 0;
     z-index: 165;
-
 }
 
 .box3 h2 {
@@ -226,7 +221,7 @@ nav img {
 
 .box3 p {
     margin-top: 30px;
-    font-size: 35px;
+    font-size: 30px;
     font-family: paragraph1;
 }
 
@@ -273,20 +268,18 @@ nav img {
 }
 .textCtaHover{
     transition: all 0.1s ease;
-    color: rgb(15, 103, 15);
+    color: rgb(253, 120, 80);
+    text-decoration: underline !important;
     
 }
 .textCtaHover:hover{
    color: rgb(124, 119, 119);
-
 }
 #head {
     width: 300px;
     height: auto;
     z-index: 30;
-
     background-color: rgba(255, 166, 0, 0);
-
 }
 
 #heart1 {
@@ -303,20 +296,18 @@ nav img {
     height: auto;
     z-index: 20;
     background-color: rgba(255, 166, 0, 0);
-
 }
 
 .explain {
-    width: 650px;
+    width: 550px;
     flex-direction: column;
-    height: 700px;
+    height: 560px;
     text-align: left;
-    font-size: 1.2em;
+    font-size: 1em;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     margin:0px;
-
 }
 
 
@@ -338,7 +329,6 @@ nav img {
     color: #FF5400;
     font-family: 'Libre Baskerville', serif;
     font-size: 1.3em;
-
 }
 
 .construct {
@@ -432,7 +422,6 @@ nav img {
     position: relative;
     width: 100%;
     height: 100vh;
-
 }
 
 .magicTextContainer {
@@ -523,7 +512,6 @@ border-radius: 0px;
 #turnover img {
     transform: rotate(0deg);
     transition: all ease-out 0.3s;
-
 }
 
 #turnover:hover img {
@@ -537,12 +525,10 @@ border-radius: 0px;
     transition: all 0.3s ease-out;
     position: relative;
     z-index: 1002;
-
 }
 
 .contactCta span:hover {
     color: rgb(83, 83, 83);
-
 }
 
 .contactCta {
@@ -585,7 +571,7 @@ border-radius: 0px;
 }
 .showcaseLand img{
     width: auto;
-    height: 500px;
+    height: 300px;
     margin-right: 80px;
     transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
     margin-bottom: 75px;
@@ -594,22 +580,24 @@ border-radius: 0px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     align-items: center;
-    padding:0 160px;  
+    padding:0 100px;  
 }
 .board2{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:0 160px;
+    padding:0 100px;
 }
 .contextFrame{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     font-family: 'Libre Baskerville', serif;
-    font-size: 100px;
+    font-size: 70px;
+    text-align: center;
     line-height: 1.4em;
 }
 .exhibitions{
@@ -618,11 +606,11 @@ border-radius: 0px;
     margin-bottom: -10px;
     height: 100px;
     overflow: hidden;
-
 }
 .VerticalBoi{
     height: 160px;
     width: 120px;
+    display: none;
     margin-left: 20px;
 }
 .exhibitions img{
@@ -632,7 +620,7 @@ border-radius: 0px;
 .descriptionBoard{
     width: 100%;
     opacity: 0;
-    text-align: left;
+    text-align: center;
     filter: brightness(0) sepia(1);
     transform: translateX(-80px) skewX(30deg) rotate(-5deg) ;
     transition: all 1s cubic-bezier(0.47, 0, 0.175, 1);

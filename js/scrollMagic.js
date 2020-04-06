@@ -106,10 +106,10 @@ let turnx=0
 let turny=0
 
 window.addEventListener('scroll',event=>{
-    if(window.scrollY>3750){
+    if(window.scrollY>3250){
         textBlurry1.classList.add('textFinalPhase')
     }
-    if(window.scrollY>5450){
+    if(window.scrollY>4050){
         textBlurry2.classList.add('textFinalPhase')
     }
 
