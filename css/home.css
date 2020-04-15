@@ -475,7 +475,8 @@ nav img {
     background: black;
     position: absolute;
     transform: scale(0);
-    left: 50%;
+    left: 50%;  
+    font-size: 0.8em;
     top: 50%;
     border-radius: 100px;
     margin-left: -25px;
@@ -489,8 +490,34 @@ nav img {
     position: relative;
     filter: saturate();
 }
-
-
+.doubleFaceSkills{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background:blue;
+}
+#arthurYoung{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    left: 50%;
+    top:50%;
+    margin-top: -268.5px;
+    margin-left: -200px;
+}
+#mainArgument{
+    font-family: 'Libre Baskerville', serif;
+    mix-blend-mode: saturation;
+    color: white;
+    width: 70%;
+    font-size: 60px;
+    text-align: center;
+    z-index: 2;
+    mix-blend-mode: lighten;
+}
 
 .blueboy {
     width: 100vw;
@@ -657,11 +684,10 @@ border-radius: 0px;
     display: none;
 }
 
-div.imgframe{
+.imgframe {
     perspective: 800px;
-    margin: 90px 0;
+    margin: -30px 0 130px 0;
     transform-style: preserve-3d;
-    
     pointer-events: none !important;
 }
 #scroll3dLeft{
@@ -760,11 +786,33 @@ div.imgframe{
     .cursor{
         display: none;
     }
+    .doubleFaceSkills{
+        align-items: unset;
+    }
+    #mainArgument {
+        font-family: 'Libre Baskerville', serif;
+        color: white;
+        width: 80%;
+        font-size: 30px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        z-index: 2;
+    }
+    #arthurYoung {
+        position: absolute;
+        width: 250px;
+        height: auto;
+        left: 50%;
+        top: 50%;
+        margin-top:-167.5px;
+        margin-left: -125px;
+    }
     .someMorePrecision {
         font-size: 0.4em;
         padding: 10px;
         display: flex;
-        justify-content: flex-end;
+        justify-content: center;
         width: 100%;
         align-items: center;
         height: 50px;
@@ -820,10 +868,11 @@ div.imgframe{
     #poster2, #poster3, #poster5{
         display: none;
     }
-    .imgFrame{
+   .imgFrame{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 0 0 80px 0 !important;
     }
     .showcaseLand img{
         width: 280px ;
@@ -896,7 +945,7 @@ div.imgframe{
         text-align: left;
         align-items: center;
         justify-content: center;
-        margin: 34px;
+        margin: 74px 0;
     }
     .box3 h2 {
         font-family: 'Libre Baskerville', serif;
@@ -957,6 +1006,9 @@ div.imgframe{
     .slideProjectEffect h3 {
         margin: 22px;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 257px;
     }
 
