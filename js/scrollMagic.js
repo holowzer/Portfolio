@@ -1,13 +1,25 @@
 const magicWindow = document.querySelector(".showcaseScrollMagic")
 const circle = document.querySelector('.circle')
 const nameDesignContainer = document.querySelector(".magicTextContainer")
-
+const uxArrowScroll = document.querySelector("#uxArrowScroll")
 let txtSpace = 5
 const colors = ["white", "blue", "#FF5400"]
 let i = 0
 let x = 0
 let typeOfPaint = 1
 let renderedName = 1
+
+
+window.addEventListener('scroll',()=>{
+    if(window.scroolY>5){
+        uxArrowScroll.classList.add('scrollIndicatorAway')
+    }
+    else{
+        uxArrowScroll.classList.remove('scrollIndicatorAway')
+    }
+}
+)
+
 while (x < 21) {
     let newNamePath = document.createElement("h1")
     newNamePath.innerText = "Arthur Lasnel"
@@ -106,17 +118,17 @@ let turnx=0
 let turny=0
 
 window.addEventListener('scroll',event=>{
-    if(window.scrollY>3250){
+    if(window.scrollY>1450){
         textBlurry1.classList.add('textFinalPhase')
     }
-    if(window.scrollY>4050){
+    if(window.scrollY>2250){
         textBlurry2.classList.add('textFinalPhase')
     }
 
 
 })
 window.addEventListener('scroll',event=>{
-    if( window.scrollY>8500 || window.scrollY<2000) {
+    if( window.scrollY>8500 || window.scrollY<80) {
         textBlurry1.classList.remove('textFinalPhase')
         textBlurry2.classList.remove('textFinalPhase')
 
@@ -127,13 +139,13 @@ window.addEventListener('scroll',event=>{
 
 
 window.addEventListener('scroll',event=>{
-    if( window.scrollY>2900 && window.scrollY<8000) {
+    if( window.scrollY> 900 && window.scrollY<8000) {
         turnx+=window.scrollY/window.scrollY-0.84
         turny+=window.scrollY/window.scrollY-0.82
         poster1.style.transform="rotateX("+turnx*1+"deg) rotateY("+turny*1+"deg)"
         poster2.style.transform="rotateX("+turnx+"deg) rotateY("+turny*0.82+"deg)"
         poster3.style.transform="rotateX("+turnx*-1.35+"deg) rotateY("+turny*1.89+"deg)"
-        poster4.style.transform="rotateX("+turnx*-0.87+"deg) rotateY("+turny*1.23+"deg)"
+        poster4.style.transform="rotateX("+turnx*-0.89+"deg) rotateY("+turny*-1.23+"deg)"
         poster5.style.transform="rotateX("+turnx*0.67+"deg) rotateY("+turny*0.13+"deg)"
     }
     else{

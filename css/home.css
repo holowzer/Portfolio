@@ -425,7 +425,20 @@ nav img {
     filter: contrast(100%) blur(0px) brightness(100%) ;
 }
 
-
+#uxArrowScroll{
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 50%;
+    transition: all 0.2s ease;
+    top: 80%;
+    margin-left: -40px;
+    width: 60px;
+    opacity: 1;
+    height: auto;
+}
+.scrollIndicatorAway{
+    opacity: 0;
+}
 
 .showcaseScrollMagic {
     width: 100vw !important;
@@ -518,7 +531,28 @@ nav img {
     z-index: 2;
     mix-blend-mode: lighten;
 }
-
+ footer{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-end;
+     margin-bottom: 45px;
+     padding-left: 20px;
+     color: white;
+     width: 100%;
+     font-size: 15px;
+     letter-spacing: 1px;
+     height: 80px;
+     font-family: paragraph1;
+ }
+ footer a{
+     font-size: 1.5em;
+     color: white;
+     transition: all 0.1s ease;
+ }
+ footer a:hover{
+     color: rgb(175, 175, 175);
+ }
 .blueboy {
     width: 100vw;
     height: 100vh;
@@ -533,6 +567,15 @@ nav img {
     flex-direction: column;
     align-items: center;
     border-radius: 1000px;
+}
+.blueLetter{
+    color: rgb(47, 79, 255);
+}
+.yellowLetter{
+color: yellow;
+}
+.redLetter{
+    color: red; 
 }
 .backforth{
     opacity: 1;
@@ -686,7 +729,7 @@ border-radius: 0px;
 
 .imgframe {
     perspective: 800px;
-    margin: -30px 0 130px 0;
+    margin: 40px 0 130px 0;
     transform-style: preserve-3d;
     pointer-events: none !important;
 }
@@ -783,7 +826,24 @@ border-radius: 0px;
         position: relative;
         background-color: black;
     }
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        margin-bottom: 125px;
+        padding-left: 0;
+        color: white;
+        width: 100%;
+        font-size: 15px;
+        letter-spacing: 1px;
+        height: 120px;
+        font-family: paragraph1;
+    }
     .cursor{
+        display: none;
+    }
+    .phoneHidden{
         display: none;
     }
     .doubleFaceSkills{
@@ -808,6 +868,7 @@ border-radius: 0px;
         margin-top:-167.5px;
         margin-left: -125px;
     }
+
     .someMorePrecision {
         font-size: 0.4em;
         padding: 10px;
@@ -895,6 +956,14 @@ border-radius: 0px;
         transition: cubic-bezier(0.19, 1, 0.22, 1) all 1s;
         filter: contrast(100%) blur(0px) brightness(100%);
     }
+    .contactCta span {
+        font-family: paragraph1;
+        font-size: 50px;
+        color: rgb(245, 245, 245);
+        transition: all 0.3s ease-out;
+        position: relative;
+        z-index: 1002;
+    }
     .showcaseLand {
         height: auto;
     }
@@ -907,10 +976,11 @@ border-radius: 0px;
     }
     .convincingText {
         font-family: paragraph1;
-        font-size: 50px;
+        font-size: 40px;
         width: 250px;
         text-align: center;
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+        margin-top: -40px;
         margin-left: -10px;
     }
     .contactCta {
