@@ -16,7 +16,7 @@ a {
 
 @font-face {
     font-family: paragraph3;
-    src: url(../fonts/Ribes-Black.otf);
+    src: url(../fonts/MAZIUSREVIEW20.09-Regular.otf);
 }
 
 
@@ -106,7 +106,7 @@ nav img {
 }
 
 .box1 h2 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'paragraph3';
     font-weight: lighter;
     color: white;
     font-size: 2.5em;
@@ -196,7 +196,7 @@ nav img {
 }
 
 .box3 h2 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'paragraph3';
     font-size: 2.8em;
     color: white;
     font-weight: lighter;
@@ -327,7 +327,7 @@ nav img {
 
 .containStuff h3 {
     color: #FF5400;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'paragraph3';
     font-size: 1.3em;
 }
 
@@ -414,7 +414,7 @@ nav img {
 }
 
 .slideProjectEffect h3 {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'paragraph3';
     font-size: 3em;
     width: 400px;
     margin: 0 25px 0 80px;
@@ -522,7 +522,7 @@ nav img {
     margin-left: -200px;
 }
 #mainArgument{
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'paragraph3';
     mix-blend-mode: saturation;
     color: white;
     width: 70%;
@@ -685,7 +685,7 @@ border-radius: 0px;
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'paragraph3';
     font-size: 70px;
     text-align: center;
     line-height: 1.4em;
@@ -773,7 +773,7 @@ border-radius: 0px;
     margin-bottom: 108px;
     font-size: 30px;
     text-transform: uppercase;
-    font-family: paragraph3;
+    font-family: 'paragraph3';
     font-weight: 800;
     color: rgb(243, 243, 243);
   }
@@ -850,7 +850,7 @@ border-radius: 0px;
         align-items: unset;
     }
     #mainArgument {
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'paragraph3';
         color: white;
         width: 80%;
         font-size: 30px;
@@ -1018,7 +1018,7 @@ border-radius: 0px;
         margin: 74px 0;
     }
     .box3 h2 {
-        font-family: 'Libre Baskerville', serif;
+        font-family: 'paragraph3';
         font-size: 2.4em;
         color: white;
         font-weight: lighter;
