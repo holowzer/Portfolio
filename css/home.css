@@ -387,9 +387,9 @@ nav img {
 .someMorePrecision{
     font-size: 0.4em;
     /* line-height: 95% !important; */
-    padding: 7px;
+    padding: 1px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     width: 73%;
     /* text-align: center; */
     align-items: center;
